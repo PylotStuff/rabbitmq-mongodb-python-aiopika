@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Consumer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/ingest.py",
+            "env": { "PYTHONPATH": "${workspaceRoot}"},
+            "console": "integratedTerminal",
+            "justMyCode": false,
+        },
+
+        {
+            "name": "Producer",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/src/publisher_manual.py",
+            "env": { "PYTHONPATH": "${workspaceRoot}"},
+            "console": "integratedTerminal",
+            "justMyCode": false,
+        }
+
+    ]
+}
